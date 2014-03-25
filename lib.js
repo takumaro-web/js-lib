@@ -230,10 +230,10 @@ $(function(){
 		//Stop timer
 		var arrayItem = [btnNext,btnBack];
 		$.each(arrayItem, function(){	
-    		this.focus(function(){　// stop timer by focus
+    		this.focus(function(){ // stop timer by focus
 				stopTimer(false,true);
     		});
-			this.blur(function(){　// start timer by focus out
+			this.blur(function(){ // start timer by focus out
 				stopTimer(false,false);
     		});
 		});
