@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2013 paradox-tm
+* Copyright (c) 2013 muraki-takuma / paradox-tm.com
 *
 * Permission is hereby granted, free of charge, to any person obtaining a
 * copy of this software and associated documentation files (the "Software"),
@@ -47,7 +47,6 @@ $(function(){
 
 $(function() {
 	var backToTop;
-	backToTop();
 
 	backToTop = function() {
 	  var btnTop;
@@ -60,6 +59,8 @@ $(function() {
 	  });
 	};
 });
+
+	backToTop();
 
 /* ---------------------------------------------------------------------
   現在地表示（サイドナビ）
@@ -180,7 +181,6 @@ $(function(){
 		bnrList = $(obj).find("#list-main-visual"),
 		bnrListWidth = 0,
 		bnrItem = $(obj).find("#list-main-visual").find("li"),
-		bnrItemLink = $(obj).find("#list-main-visual").find("li").find("a"),
 		bnrNum = $(bnrItem).length,
 		btnBack = $(obj).find(".back").find("a"),
 		btnNext = $(obj).find(".next").find("a"),
